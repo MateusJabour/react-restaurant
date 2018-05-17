@@ -1,0 +1,197 @@
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+body, html {
+  margin: 0;
+  height: 100%; }
+
+body {
+  background-color: #0a1128;
+  font-family: sans-serif;
+  color: #FEFCFB;
+  font-size: 14px;
+  margin: 0; }
+  @media only screen and (min-width: 769px) {
+    body {
+      font-size: 16px; } }
+
+.fish-form {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  height: 130px;
+  margin: 1rem 0;
+  border: 1px solid #FEFCFB; }
+  .fish-form input, .fish-form textarea, .fish-form select, .fish-form button {
+    height: 25px;
+    flex-grow: 1;
+    background-color: #034078;
+    color: #FEFCFB;
+    border: none; }
+  .fish-form input {
+    padding-left: 0.25rem; }
+  .fish-form input[name="name"] {
+    border-right: 1px solid #FEFCFB; }
+  .fish-form input[name="image"] {
+    border-right: 1px solid #FEFCFB; }
+  .fish-form textarea {
+    width: 100%;
+    resize: none;
+    height: 50px;
+    border-top: 1px solid #FEFCFB;
+    border-bottom: 1px solid #FEFCFB; }
+  .fish-form button {
+    width: 100%;
+    border-top: 1px solid white;
+    cursor: pointer; }
+    .fish-form button:hover {
+      background-color: #001F54; }
+
+.footer {
+  display: flex;
+  background-color: #001F54;
+  width: 100%; }
+
+.footer ul {
+  display: flex;
+  list-style: none; }
+
+.footer ul li {
+  margin-left: 1rem; }
+
+.fish {
+  display: flex;
+  margin: 2rem 0;
+  width: 100%; }
+
+.fish__picture {
+  margin-right: 1rem;
+  width: 50%; }
+  @media only screen and (min-width: 769px) {
+    .fish__picture {
+      width: 25%; } }
+
+.fish__price {
+  display: block; }
+  @media only screen and (min-width: 769px) {
+    .fish__price {
+      display: inline-block;
+      float: right; } }
+
+.fish__status-button {
+  background-color: #034078;
+  border: 1px solid #FEFCFB;
+  color: white;
+  padding: 0.5rem 1rem; }
+  .fish__status-button:hover {
+    background-color: #001F54; }
+
+.fish__info {
+  flex-grow: 1; }
+
+.menu__fish-list {
+  padding: 0;
+  list-style: none; }
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+  @media only screen and (min-width: 769px) {
+    .header {
+      width: 70%; } }
+
+.order__items {
+  padding: 0;
+  list-style: none;
+  width: 90%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 769px) {
+    .order__items {
+      width: 40%; } }
+
+.order__item, .order__total {
+  padding: 1rem;
+  border: 1px solid #FEFCFB; }
+
+.order__item {
+  display: flex;
+  justify-content: space-between; }
+  .order__item button {
+    background: none;
+    color: #FEFCFB;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: background-color 1s; }
+    .order__item button:focus, .order__item button:Active {
+      border: none;
+      outline: none; }
+    .order__item button:hover {
+      background-color: rgba(254, 252, 251, 0.5); }
+
+.main {
+  min-height: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
+  @media only screen and (min-width: 769px) {
+    .main {
+      width: 70%; } }
+
+.wrapper {
+  display: flex;
+  width: calc(100% * 3);
+  transition: transform 1s; }
+
+.main__section {
+  width: 100%; }
+
+.main__section-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.main__change-section-button {
+  background: none;
+  color: #FEFCFB;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  transition: background-color 1s; }
+  .main__change-section-button:focus, .main__change-section-button:Active {
+    border: none;
+    outline: none; }
+  .main__change-section-button:hover {
+    background-color: rgba(254, 252, 251, 0.5); }
+
+.store-selector-container {
+  padding-top: 120px; }
+
+.store-selector {
+  display: flex;
+  height: 200px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: #001F54; }
+
+.store-selector__name-input {
+  width: 40%;
+  height: 2rem;
+  padding-left: 0.5rem;
+  font-size: 1rem; }
+
+.store-selector__submit-button {
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  background: none;
+  border: 1px solid #FEFCFB;
+  color: #FEFCFB;
+  cursor: pointer; }

@@ -1,0 +1,32 @@
+.order__items
+  padding: 0
+  list-style: none
+  width: 90%
+  margin: 0 auto
+
+  @media #{$tablet-breakpoint}
+    width: 40%
+
+.order__item, .order__total
+  padding: 1rem
+  border: 1px solid $white
+
+.order__item
+  display: flex
+  justify-content: space-between
+
+  button
+    background: none
+    color: $white
+    border: none
+    font-size: 1rem
+    cursor: pointer
+    border-radius: 100%
+    transition: background-color 1s
+
+    &:focus, &:Active
+      border: none
+      outline: none
+
+    &:hover
+      background-color: rgba($white, 0.5)

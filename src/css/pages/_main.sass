@@ -1,0 +1,43 @@
+.main
+  min-height: 1600px
+  width: 100%
+  margin: 0 auto
+  overflow: hidden
+
+  @media #{$tablet-breakpoint}
+    width: 70%
+
+.wrapper
+  display: flex
+  width: calc(100% * 3)
+  transition: transform 1s
+
+.main__section
+  width: 100%
+
+.main__section-control
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.main__change-section-button
+  background: none
+  color: $white
+  border: none
+  font-size: 2rem
+  font-weight: bold
+  cursor: pointer
+  border-radius: 100%
+  width: 40px
+  height: 40px
+  line-height: 40px
+  transition: background-color 1s
+
+  &:focus, &:Active
+    border: none
+    outline: none
+
+  &:hover
+    background-color: rgba($white, 0.5)
+    
+.main__section_name

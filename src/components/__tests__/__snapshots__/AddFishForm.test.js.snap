@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match snapshot 1`] = `
+<form
+  action=""
+  className="fish-edit"
+  onSubmit={[Function]}
+>
+  <input
+    name="name"
+    placeholder="Name"
+    type="text"
+  />
+  <input
+    name="price"
+    placeholder="Price"
+    type="text"
+  />
+  <select
+    name="status"
+  >
+    <option
+      value="available"
+    >
+      Fresh
+    </option>
+    <option
+      value="unavailable"
+    >
+      Sold out
+    </option>
+  </select>
+  <textarea
+    name="desc"
+    placeholder="Desc"
+  />
+  <input
+    name="image"
+    placeholder="Image"
+    type="text"
+  />
+  <button
+    type="submit"
+  >
+    + Add Fish
+  </button>
+</form>
+`;

@@ -1,0 +1,29 @@
+.fish
+  display: flex
+  margin: 2rem 0
+  width: 100%
+
+.fish__picture
+  margin-right: 1rem
+  width: 50%
+
+  @media #{$tablet-breakpoint}
+    width: 25%
+
+.fish__price
+  display: block
+  @media #{$tablet-breakpoint}
+    display: inline-block
+    float: right
+
+.fish__status-button
+  background-color: $blue
+  border: 1px solid $white
+  color: white
+  padding: 0.5rem 1rem
+
+  &:hover
+    background-color: $dark-blue
+
+.fish__info
+  flex-grow: 1
